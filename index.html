@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ShopEasy</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#user">User Login</a>
+            <a href="#admin">Admin Login</a>
+            <a href="#products">Products</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to ShopEasy</h2>
+        <p>Your one-stop destination for online shopping!</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <section id="user">
+        <h2>User Login</h2>
+        <form onsubmit="return login('user')">
+            <input type="email" placeholder="Enter Email" required>
+            <input type="password" placeholder="Enter Password" required>
+            <button type="submit">User Login</button>
+        </form>
+    </section>
+
+    <section id="admin">
+        <h2>Admin Login</h2>
+        <form onsubmit="return login('admin')">
+            <input type="text" placeholder="Admin Username" required>
+            <input type="password" placeholder="Admin Password" required>
+            <button type="submit">Admin Login</button>
+        </form>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+
+        <div class="products">
+            <div class="card">
+                <h3>Laptop</h3>
+                <p>Price: ₹50,000</p>
+                <button onclick="addToCart('Laptop', 50000)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>Headphones</h3>
+                <p>Price: ₹1,500</p>
+                <button onclick="addToCart('Headphones', 1500)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="card">
+                <h3>Mobile</h3>
+                <p>Price: ₹20,000</p>
+                <button onclick="addToCart('Mobile', 20000)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <h3>Shopping Cart</h3>
+        <p id="cart">No products added.</p>
+        <p id="total">Total: ₹0</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+input {
+    display: block;
+    width: 250px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+button, .btn {
+    background-color: #008cba;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #eee;
+    padding: 20px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+button:hover, .btn:hover {
+    background-color: #005f80;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
